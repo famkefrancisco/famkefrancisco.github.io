@@ -1,0 +1,347 @@
+/* GENERAL CSS */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body,html {
+    font-family: 'Roboto Mono', monospace;    
+    background-color: white ;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Roboto Mono', monospace;
+    color:black;
+    font-size: 3em;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;    
+    color: black;
+    font-size: 1.25em;
+}
+/* GENERAL CSS */
+
+
+/* NAV BAR */
+nav {
+    /* background-image: url(https://coolbackgrounds.io/images/backgrounds/white/white-radial-gradient-a5802da1.jpg); */
+    height: 90px;
+    width: 100%;
+    position: sticky; 
+    top: 0;
+    z-index: 1;
+    background-color: #dddddd;
+}
+
+nav ul {
+    /* background-image: url(https://coolbackgrounds.io/images/backgrounds/white/white-radial-gradient-a5802da1.jpg); */
+    float:right;
+    margin-right: 80px;
+    background-color: #dddddd;
+}
+
+nav ul li {
+    font-family: 'Roboto Mono', monospace;    
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: black;
+    font-size: 1em;
+    padding: 10px 15px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height:80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* END OF NAV BAR */
+/* START OF CONTENT */
+#index, #about{
+    background-image: url(https://coolbackgrounds.io/images/backgrounds/white/white-radial-gradient-a5802da1.jpg);
+    height:calc(100vh - 80px);
+    transition: 5s;
+    display: grid;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* MAIN */
+#index .text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    
+}
+
+#index .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+#index .button:hover {
+    background-color: #555;
+    color: white;
+  }
+/* END OF MAIN */
+
+/* ABOUT ME */
+#about{
+    background-image: url(https://coolbackgrounds.io/images/backgrounds/white/white-radial-gradient-a5802da1.jpg);
+    height:fit-content;
+    transition: 5s;
+    background-position: center;
+    background-repeat: repeat;
+    position: relative;
+}
+/* END OF ABOUT ME */
+
+/* EXP */
+#exp{
+    background-image: url(https://coolbackgrounds.io/images/backgrounds/white/white-radial-gradient-a5802da1.jpg);
+    height: 100%;
+    transition: 5s;
+    display: grid;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#exp .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+  
+#exp .container > li {
+    flex-basis: 300px; 
+}
+  
+#exp .container li img {
+    object-fit: cover;
+    width: auto;
+    height: 100px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+  
+/* END OF EXP */
+
+/* PROJECT */
+#proj{
+    background-image: url(https://coolbackgrounds.io/images/backgrounds/white/white-radial-gradient-a5802da1.jpg);
+    background-size: cover;
+    height: auto;
+    transition: 5s;
+    display: grid;
+}
+  
+#proj .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+  
+#proj .container > li {
+    flex-basis: 350px; 
+}
+  
+#proj .container li img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+#proj .overlay {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 99%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: lightgray;
+}
+  
+#proj .con:hover .overlay {
+    opacity: 1;
+}
+
+#proj .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* END OF PROJECT */
+
+/* CONTACT US */
+#contact{
+    background-image: url(https://coolbackgrounds.io/images/backgrounds/white/white-radial-gradient-a5802da1.jpg);
+    background-size: cover;
+    height: 100%;
+    transition: 5s;
+    display: grid;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 20px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 20%;
+}
+  
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+  
+.fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+#container .con{
+    position: relative;
+    width: 100%;
+}
+
+#contact .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+  
+#contact .container > li {
+    flex-basis: 350px; 
+}
+  
+#contact .container li img {
+    margin-top: 50px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+#contact .overlay {
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: lightgray;
+}
+  
+#contact .con:hover .overlay {
+    opacity: 1;
+}
+  
+#contact .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* END OF CONTACT US */
+/* END OF CONTENT */
+
+
+/* MEDIA QUERY */
+@media (max-width: 600px) { 
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+    }
+    
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+@media (max-width: 1200px){
+    #about,#exp,#proj,#contact{
+        flex-direction: column;
+    }
+}
+/* END OF MEDIA QUERY */
+
+

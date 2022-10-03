@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+<center>
+    <div> 
+        <form action="/test">
+        <h1>FORM</h1>
+    
+        <label for="firstname">First Name:</label>
+        <input type="text"  placeholder="enter first name" id="firstname" name="fname" size="15">
+    
+        <br>
+        <br>
+
+    
+        <label>
+            Last Name:
+            <input type="lastname" placeholder="enter last name" name="lname" size="15">
+        </label>
+    
+        <br>
+        <br>
+
+    
+        <label for="email">Email:</label>
+        <input type="text"  placeholder="it should contain @" id="email" name="email" size="15">
+        
+        <br>
+        <br>
+
+    
+        <label>Mobile:
+            <input type="mobile" placeholder="only 10 digits are allowed" name="mobile" size="15">
+        </label>
+    
+        <br>
+        <br>
+
+        <label>Gender: </label>
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" value="male">
+    
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" value="female">
+        
+        <br>
+        <br>
+
+    
+        <label for="dob">Date of Birth:
+            <input type="date" placeholder="enter birthday" name="date" size="15">
+        </label>
+    
+        <br>
+        <br>
+
+    
+        <p><label for="address">Address:</label></p>
+            <textarea id="address" name="address" rows="10" cols="60"></textarea>
+
+        <br>
+        <br>
+
+        
+        <label>City:
+            <input type="city" placeholder="" name="city" size="15">
+        </label>
+    
+        <br>
+        <br>
+
+        <label>Zip Code:
+            <input type="zip" placeholder="" name="zip" size="15">
+        </label>
+    
+        <br>
+        <br>
+
+        <label>Suite:
+            <input type="suite" placeholder="" name="suite" size="15">
+        </label>
+    
+        <br>
+        <br>
+
+        <label>Year:
+            <select name="qualification" id="quali">
+                <option value="">Select Year</option>
+                <option value="1">1st</option>
+                <option value="4">4th</option>
+            </select>
+        </label>
+    
+        <br>
+        <br>
+
+        Specialization:
+        <br>
+        
+        <input type="checkbox" id="comsci" name="special1" value="comsci">
+        <label for="special1"> Computer Science</label><br>
+        <input type="checkbox" id="infotech" name="special2" value="it">
+        <label for="special2"> Information Technology</label><br>
+        <input type="checkbox" id="comparch" name="special3" value="comparch">
+        <label for="special3"> Computer Architecture</label><br>
+        <input type="checkbox" id="telecom" name="special4" value="telecom">
+        <label for="special4"> Tele Communication</label><br>
+    
+        <br>
+
+        <input type="submit" value="Submit">
+</center>
+
+</div>
+</form>
+</body>
+</html>
